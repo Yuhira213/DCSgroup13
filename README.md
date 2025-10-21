@@ -1,4 +1,4 @@
-# 🍞 “SISTEM PENGENDALIAN EXHAUST FAN UNTUK PENGENDALIAN TEMPERATUR DAN KELEMBABAN KAMAR”
+# “SISTEM PENGENDALIAN EXHAUST FAN UNTUK PENGENDALIAN TEMPERATUR DAN KELEMBABAN KAMAR”
 <img width="1803" height="960" alt="image" src="https://github.com/user-attachments/assets/f9045fd1-2770-48e4-8c98-8227a90cde6d" />
 
 Dalam era industri modern, kebutuhan akan sistem pemantauan lingkungan yang andal dan terintegrasi semakin meningkat.
