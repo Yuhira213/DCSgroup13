@@ -8,7 +8,7 @@ Dalam era industri modern, kebutuhan akan sistem pemantauan lingkungan yang anda
 2. Yudhistira Ananda Kuswantoro (2042231015)
 3. Egga Terbyd Fabryan          (2042231029)
 
-# Untuk Laporan dan Powerpoint juga dapat diakses di tautan berikut:
+# Untuk Laporan dapat diakses di tautan berikut:
 ## Link Laporan:
 ### https://its.id/m/LaporanSKTkel13
 
