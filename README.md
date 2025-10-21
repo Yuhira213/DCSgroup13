@@ -11,6 +11,7 @@ Proyek ini dikembangkan untuk memenuhi tugas Sistem Komputasi Terdistribusi (SKT
 ### https://its.id/m/LaporanSKTkel13
 
 ## Struktur Proyek
+
 ├── DWsim/
 │   ├── dwsim.py          # Python bridge → InfluxDB
 │   └── Thingsboard.py    # Python bridge from InfluxDB → Thingsboard
