@@ -21,6 +21,16 @@ Proyek ini dikembangkan untuk memenuhi tugas Sistem Komputasi Terdistribusi (SKT
   ├── target/ # Hasil build firmware
   └── influxdb.py # Code untuk mengirim data bacaan sensor ke InfluxDB
 
+## 🔌 Koneksi Hardware
+| Komponen | Pin ESP32-S3 | Keterangan |
+|-----------|---------------|-------------|
+| Servo | GPIO18 | Sinyal PWM (LEDC 50 Hz) |
+| Relay IN | GPIO5 | Relay Menyalakan Kipas |
+| Modbus to TTL RO| RX | Komunikasi RS485 |
+| Modbus to TTL DI| TX | Komunikasi RS485 |
+| Modbus to TTL RE & DE| GPIO21 | Komunikasi RS485 |
+
+
 ## Requirements
 ### Software
 1. Rust Programming Language V 1.77
