@@ -64,6 +64,7 @@ Copy IP dari Wi-Fi yang terhubung dengan ESP32S3
 kemudian save file
 
 #### Lalu jalankan Command berikut pada terminal
+#### Contoh:
 ```
 python3 influxdb.py 192.168.1.20 7878
 ```
