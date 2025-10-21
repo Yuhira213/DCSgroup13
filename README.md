@@ -1,7 +1,5 @@
-# “SISTEM PENGENDALIAN EXHAUST FAN UNTUK PENGENDALIAN TEMPERATUR DAN KELEMBABAN KAMAR”
-<img width="1803" height="960" alt="image" src="https://github.com/user-attachments/assets/f9045fd1-2770-48e4-8c98-8227a90cde6d" />
-
-Dalam era industri modern, kebutuhan akan sistem pemantauan lingkungan yang andal dan terintegrasi semakin meningkat.
+# “SISTEM KONTROL TERDISTRIBUSI - Sistem Monitoring dan Kontrol Terintegrasi”
+Proyek ini dikembangkan untuk memenuhi tugas Sistem Komputasi Terdistribusi (SKT) yang menggabungkan pembacaan sensor SHT20, simulasi DWSIM, database InfluxDB, dan platform IoT ThingsBoard.
 
  ## Authors
 1. Ahmad Radhy                  (Supervisor)
@@ -12,10 +10,16 @@ Dalam era industri modern, kebutuhan akan sistem pemantauan lingkungan yang anda
 ## Link Laporan:
 ### https://its.id/m/LaporanSKTkel13
 
-## Features
-1. **Penyimpanan dan Tampilan Dashboard melalui Thingsboard**
-2. **Hardware dapat mengirim data melalui Wi-Fi**
-3. **Sistem Database menggunakan InfluDB**
+## Struktur Proyek
+├── DWsim/
+│ ├── dwsim.py # Python bridge → InfluxDB
+│ └── Thingsboard.py # Python bridge from InfluxDB → Thingsboard
+└── Modbus-Edge/
+  ├──  src/ # Source code utama ESP32-S3
+  ├── Cargo.toml # Konfigurasi & dependensi proyek Rust
+  ├── build.rs # Script build firmware
+  ├── target/ # Hasil build firmware
+  └── influxdb.py # Code untuk mengirim data bacaan sensor ke InfluxDB
 
 ## Requirements
 ### Software
