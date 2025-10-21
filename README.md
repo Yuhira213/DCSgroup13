@@ -21,7 +21,7 @@ Proyek ini dikembangkan untuk memenuhi tugas Sistem Komputasi Terdistribusi (SKT
   ├── target/ # Hasil build firmware
   └── influxdb.py # Code untuk mengirim data bacaan sensor ke InfluxDB
 
-## 🔌 Koneksi Hardware
+## Koneksi Hardware
 | Komponen | Pin ESP32-S3 | Keterangan |
 |-----------|---------------|-------------|
 | Servo | GPIO18 | Sinyal PWM (LEDC 50 Hz) |
