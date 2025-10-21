@@ -49,36 +49,36 @@ kemudian masukkan command cd Modbus-Edge kemudian enter, lalu masukkan command
 ```
 cargo build --release
 ```
-#### Kemudian
+### Kemudian
 ```
 cargo run --release
 ```
-#### Ini digunakan untuk membuild Program Rust, dan menjalankannya di ESP32S3, ketika program telah berjalan. Maka Program akan mengirimkan data bacaan sensor ke Thingsboard, dan InfluxDB Cloud setiap 1 menit
+### Ini digunakan untuk membuild Program Rust, dan menjalankannya di ESP32S3, ketika program telah berjalan. Maka Program akan mengirimkan data bacaan sensor ke Thingsboard, dan InfluxDB Cloud setiap 1 menit
 
 ### 4. Lalu buat tab baru untuk terminal,
 <img width="878" height="651" alt="Screenshot from 2025-10-20 20-16-18" src="https://github.com/user-attachments/assets/39a2615a-21d8-4274-9a54-ce7b1667ccb3" />
 Copy IP dari Wi-Fi yang terhubung dengan ESP32S3
 
-#### Ubah Konfigurasi pada file Modbus-Edge/influxdb.py, sesuaikan dengan InfluxDB local yang digunakan
+### Ubah Konfigurasi pada file Modbus-Edge/influxdb.py, sesuaikan dengan InfluxDB local yang digunakan
 <img width="1077" height="97" alt="image" src="https://github.com/user-attachments/assets/f30cb1e4-c28b-4402-8229-9c2b76f3902f" />
 kemudian save file
 
-#### Lalu jalankan Command berikut pada terminal
-#### Contoh:
+### Lalu jalankan Command berikut pada terminal
+### Contoh:
 ```
 python3 influxdb.py 192.168.1.20 7878
 ```
-#### Setelah dijalankan Program menerima bacaan sensor dari ESP32S3 lalu mengirimkannya ke InfluxDB Local
+### Setelah dijalankan Program menerima bacaan sensor dari ESP32S3 lalu mengirimkannya ke InfluxDB Local
 
 ## Untuk mengirimkan Nilai dari DWsim ke InfluxDB dan Thingsboard
 ### 1. Sesuaikan konfigurasi dari file /DWsim/dwsim.py berikut dengan Influx DB yang digunakan
 <img width="1074" height="144" alt="image" src="https://github.com/user-attachments/assets/e4b64096-b375-4ddf-abaf-26f0d6e6a11b" />
-#### Untuk Path dari Sumber Data, setelah anda membuat plant kemudian menyimpan plant tersebut, ubah path dari datanya disesuaikan dengan lokasi dari save file DWsim.
-#### Program ini berfungsi untuk membaca nilai temperature yang tersimpan dalam file XML dari save file Plant DWsim, kemudian mengirimkannya ke InfluxDB
+### Untuk Path dari Sumber Data, setelah anda membuat plant kemudian menyimpan plant tersebut, ubah path dari datanya disesuaikan dengan lokasi dari save file DWsim.
+### Program ini berfungsi untuk membaca nilai temperature yang tersimpan dalam file XML dari save file Plant DWsim, kemudian mengirimkannya ke InfluxDB
 
 ### 2. Sesuaikan konfigurasi dari file /DWsim/Thingsboard.py berikut dengan sumber InfluxDB dan Thingsboard yang digunakan
 <img width="1101" height="376" alt="Screenshot from 2025-10-21 10-40-15" src="https://github.com/user-attachments/assets/3cf06279-2771-4f9d-a5aa-4087f6d1215d" />
-#### Program ini berfungsi untuk mengambil data dari InfluxDB Local kemudian mengirimkannya ke Thingsboard.
+### Program ini berfungsi untuk mengambil data dari InfluxDB Local kemudian mengirimkannya ke Thingsboard.
 
 ## Setelah semua program dijalankan, maka nilai bacaan sensor akan terkirim ke InfluxDB Local dan Thingsboard
 
