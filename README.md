@@ -21,17 +21,14 @@ Proyek ini dikembangkan untuk memenuhi tugas Sistem Komputasi Terdistribusi (SKT
   ├── target/ # Hasil build firmware
   └── influxdb.py # Code untuk mengirim data bacaan sensor ke InfluxDB
 
-## Koneksi Hardware
-| Komponen | Pin ESP32-S3 | Keterangan |
-|-----------|---------------|-------------|
-| Servo | GPIO18 | Sinyal PWM (LEDC 50 Hz) |
-| Relay IN | GPIO5 | Relay Menyalakan Kipas |
-| Modbus to TTL RO| RX | Komunikasi RS485 |
-| Modbus to TTL DI| TX | Komunikasi RS485 |
-| Modbus to TTL RE & DE| GPIO21 | Komunikasi RS485 |
-
-
 ## Requirements
+### Hardware
+1. ESP32S3
+2. Industrial SHT40 Temperature and Humidity Sensor
+3. TTL to RS485 MAX485
+4. Mini Servo SG90
+5. Relay Module 5V High Level Trigger
+   
 ### Software
 1. Rust Programming Language V 1.77
 2. ESP IDF V 5.2.5
@@ -40,10 +37,17 @@ Proyek ini dikembangkan untuk memenuhi tugas Sistem Komputasi Terdistribusi (SKT
 5. extensa-esp32s3-espidf
 6. ldproxy
 7. Python 3.13
-8. Industrial SHT20 Temperature and Humidity Sensor
-9. Modbus To TTL Converter
-10. InfluxDB Client
-11. Thingsboard
+8. InfluxDB Client
+9. Thingsboard
+
+## Koneksi Hardware
+| Komponen | Pin ESP32-S3 | Keterangan |
+|-----------|---------------|-------------|
+| Servo | GPIO18 | Sinyal PWM (LEDC 50 Hz) |
+| Relay IN | GPIO5 | Relay Menyalakan Kipas |
+| TTL to RS485 MAX485 RO| RX | Komunikasi RS485 |
+| TTL to RS485 MAX485 DI| TX | Komunikasi RS485 |
+| TTL to RS485 MAX485 RE & DE| GPIO21 | Komunikasi RS485 |
 
 # Langkah Menjalankan Program
 ## Diharapkan untuk mengunduh zip atau melakukan clone semua isi repository ini dengan memasukkan
